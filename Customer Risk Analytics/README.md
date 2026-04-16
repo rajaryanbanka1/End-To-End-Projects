@@ -1,48 +1,37 @@
-# Fintech Risk & Transaction Analytics
+# Fintech Market Risk Analytics (Production Grade)
 
 ## 🧩 Problem
 
-A fintech firm needs to:
-
-* Detect fraudulent transactions
-* Identify high-risk customers
-* Provide analytics dashboards to clients
+Analyze market risk and performance using multi-source financial data.
 
 ---
 
-## 🔄 Data Sources
+## 🌐 Data Sources
 
-* Kaggle (Transaction Data)
-* API (Exchange Rates)
-* Internal Data (Customers)
-
----
-
-## 🔧 Pipeline
-
-Ingestion → Cleaning → Normalization → Feature Engineering → Fraud Detection → Visualization
+* Alpha Vantage (Stock Prices)
+* CoinGecko (Crypto Prices)
+* World Bank (Macro Indicators)
 
 ---
 
-## 📊 Key Insights
+## 🔄 Pipeline
 
-* Fraud transactions have higher average value
-* Small % of customers contribute to large risk
-* Certain geographies show higher fraud concentration
+API Ingestion → SQL Processing → Feature Engineering → Risk Metrics → Visualization
 
 ---
 
-## 🤖 Models Used
+## 📊 Key Metrics
 
-* Isolation Forest (Anomaly Detection)
+* Daily Returns
+* Volatility
+* Sharpe Ratio
 
 ---
 
-## 📈 Business Impact
+## 📈 Insights
 
-* Helps banks reduce fraud losses
-* Enables targeted risk mitigation
-* Improves customer segmentation
+* Crypto movements influence stock volatility
+* Macro indicators impact long-term trends
 
 ---
 
@@ -56,7 +45,8 @@ Ingestion → Cleaning → Normalization → Feature Engineering → Fraud Detec
 
 ## 🚀 How to Run
 
-1. Load datasets
-2. Run SQL pipeline
-3. Execute Python scripts
-4. Open Tableau dashboard
+1. Run API ingestion
+2. Load into SQL
+3. Execute transformation queries
+4. Run Python scripts
+5. Open Tableau dashboard
